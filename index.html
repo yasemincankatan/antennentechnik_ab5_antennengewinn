@@ -7,7 +7,6 @@
 <title>Antennengewinn – dBi und dBd verstehen</title>
 
 <style>
-
 * {
     box-sizing: border-box;
 }
@@ -27,7 +26,7 @@ body {
 .page {
     max-width: 920px;
     margin: 20px auto;
-    background: #ffffff;
+    background: white;
     border-radius: 14px;
     overflow: hidden;
     box-shadow: 0 4px 18px rgba(0,0,0,0.12);
@@ -36,8 +35,8 @@ body {
 header {
     background: linear-gradient(180deg, #1264aa, #074a86);
     color: white;
-    padding: 28px 20px;
     text-align: center;
+    padding: 28px 20px;
 }
 
 header h1 {
@@ -47,7 +46,6 @@ header h1 {
 
 header p {
     margin: 0;
-    opacity: 0.95;
     font-size: 1.05rem;
 }
 
@@ -60,48 +58,17 @@ main {
     border-radius: 12px;
     padding: 20px;
     margin-bottom: 22px;
-    background: #ffffff;
+    background: white;
 }
 
 .section h2 {
     color: #07549a;
     margin-top: 0;
-    font-size: 1.45rem;
 }
 
 .intro {
     background: #eef6fc;
     border-left: 6px solid #1264aa;
-}
-
-.formula {
-    margin: 18px auto;
-    padding: 16px;
-    max-width: 620px;
-    background: #f7f9fb;
-    border: 1px solid #b9c7d4;
-    border-radius: 8px;
-    text-align: center;
-    font-size: clamp(1.15rem, 3vw, 1.45rem);
-    font-weight: bold;
-}
-
-.definition-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 14px;
-    margin-top: 18px;
-}
-
-.definition-card {
-    padding: 15px;
-    background: #f8fafc;
-    border: 1px solid #d5dee7;
-    border-radius: 8px;
-}
-
-.definition-card strong {
-    color: #07549a;
 }
 
 .warning {
@@ -113,68 +80,57 @@ main {
     color: #8a6000;
 }
 
-.compare {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
-    margin-top: 15px;
-}
-
-.compare-box {
-    border: 1px solid #d3dbe4;
-    border-radius: 10px;
-    padding: 16px;
-    background: #fafbfc;
-}
-
-.compare-box .symbol {
-    font-size: 1.7rem;
-    font-weight: bold;
-    color: #07549a;
-    margin-bottom: 8px;
-}
-
-.reference-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 18px;
-    margin-top: 18px;
-}
-
-.reference-card {
-    text-align: center;
-    padding: 18px;
-    border-radius: 10px;
-    background: #f8fafc;
-    border: 1px solid #cfd9e3;
-}
-
-.reference-card h3 {
-    margin-top: 6px;
-    color: #07549a;
-}
-
-.big-value {
-    font-size: 1.45rem;
-    font-weight: bold;
-    margin-top: 8px;
-}
-
-svg {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    display: block;
-    margin: 15px auto;
-}
-
 .conversion {
     background: #eef8f0;
     border-left: 6px solid #3f8c4b;
 }
 
-.example {
-    background: #f5f7fa;
+.formula {
+    margin: 18px auto;
+    padding: 16px;
+    max-width: 620px;
+    background: #f7f9fb;
+    border: 1px solid #b9c7d4;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.card {
+    padding: 16px;
+    background: #f8fafc;
+    border: 1px solid #d5dee7;
+    border-radius: 10px;
+}
+
+.symbol {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #07549a;
+}
+
+.reference-card {
+    text-align: center;
+}
+
+.reference-card svg {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+.big-value {
+    font-size: 1.35rem;
+    font-weight: bold;
 }
 
 .key-message {
@@ -183,18 +139,9 @@ svg {
     background: #eaf6ec;
     border: 1px solid #9ac5a0;
     border-radius: 8px;
-    font-weight: bold;
     text-align: center;
+    font-weight: bold;
 }
-
-.source-note {
-    font-size: 0.9rem;
-    color: #555;
-    margin-top: 15px;
-}
-
-
-/* START VERSTÄNDNISCHECK */
 
 .quiz-start {
     text-align: center;
@@ -203,43 +150,19 @@ svg {
 }
 
 .start-quiz-button {
-    display: inline-block;
     width: min(100%, 390px);
-    margin-top: 12px;
     padding: 16px 24px;
-
     border: none;
     border-radius: 9px;
-
     background: #1264aa;
     color: white;
-
     font-size: 1.1rem;
     font-weight: bold;
-
     cursor: pointer;
-
-    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
-
-    transition:
-        transform 0.15s ease,
-        background 0.15s ease;
 }
 
 .start-quiz-button:hover {
     background: #074a86;
-    transform: translateY(-1px);
-}
-
-.start-quiz-button:active {
-    transform: translateY(0);
-}
-
-
-/* QUIZ */
-
-.quiz {
-    background: #fbfcfd;
 }
 
 .question {
@@ -250,29 +173,17 @@ svg {
     background: white;
 }
 
-.question h3 {
-    margin-top: 0;
-    font-size: 1.08rem;
-}
-
 .option {
     display: block;
     width: 100%;
     text-align: left;
-
     padding: 12px 13px;
     margin: 8px 0;
-
     border: 1px solid #bfcbd6;
     border-radius: 7px;
-
-    background: #ffffff;
-    color: #17202a;
-
+    background: white;
     cursor: pointer;
     font-size: 1rem;
-
-    transition: 0.15s;
 }
 
 .option:hover:not(:disabled) {
@@ -288,18 +199,12 @@ svg {
 
 .option.correct::before {
     content: "✓ ";
-    font-weight: bold;
 }
 
 .option.wrong {
     background: #fde5e5;
     border-color: #c95a5a;
     color: #7f2020;
-}
-
-.option:disabled {
-    cursor: default;
-    opacity: 1;
 }
 
 .feedback {
@@ -332,30 +237,25 @@ svg {
 
 .progress {
     height: 100%;
-    width: 0%;
+    width: 0;
     background: #42894d;
     transition: width 0.3s ease;
 }
 
 .result {
     display: none;
-
     margin-top: 22px;
     padding: 20px;
-
     background: #def3e2;
     border: 2px solid #3d8a4a;
     border-radius: 10px;
-
     text-align: center;
-
+    color: #1f642c;
     font-size: 1.2rem;
     font-weight: bold;
-
-    color: #1f642c;
 }
 
-.result .small {
+.result small {
     display: block;
     margin-top: 7px;
     font-size: 0.95rem;
@@ -370,11 +270,11 @@ footer {
     border-top: 1px solid #d9e0e6;
 }
 
-
-/* SMARTPHONE */
+[hidden] {
+    display: none !important;
+}
 
 @media (max-width: 700px) {
-
     .page {
         margin: 0;
         border-radius: 0;
@@ -384,53 +284,31 @@ footer {
         padding: 14px;
     }
 
-    .definition-grid,
-    .compare,
-    .reference-grid {
+    .grid {
         grid-template-columns: 1fr;
     }
-
-    .section {
-        padding: 17px;
-    }
-
 }
-
 </style>
 </head>
-
 
 <body>
 
 <div class="page">
 
 <header>
-
     <h1>Antennengewinn verstehen</h1>
-
-    <p>
-        dB, dBi und dBd kurz erklärt
-    </p>
-
+    <p>dB, dBi und dBd kurz erklärt</p>
 </header>
-
 
 <main>
 
-
-<!-- ======================================================
-     1. ANTENNENGEWINN
-====================================================== -->
-
 <section class="section intro">
-
     <h2>1. Was bedeutet Antennengewinn?</h2>
 
     <p>
         Der <strong>Antennengewinn</strong> beschreibt die Wirkung
-        einer Antenne in ihrer Hauptempfangs- bzw.
-        Hauptstrahlrichtung im Vergleich zu einer
-        <strong>Referenzantenne</strong>.
+        einer Antenne in ihrer Hauptempfangs- bzw. Hauptstrahlrichtung
+        im Vergleich zu einer <strong>Referenzantenne</strong>.
     </p>
 
     <p>
@@ -439,473 +317,247 @@ footer {
     </p>
 
     <div class="formula">
-
-        G = 20 · lg
-        (U<sub>Ant</sub> / U<sub>ref</sub>)
-
+        G = 20 · lg (U<sub>Ant</sub> / U<sub>ref</sub>)
     </div>
 
-
-    <div class="definition-grid">
-
-        <div class="definition-card">
-
-            <strong>
-                U<sub>Ant</sub>
-            </strong>
-
-            <br>
-
+    <div class="grid">
+        <div class="card">
+            <strong>U<sub>Ant</sub></strong><br>
             Empfangsspannung der betrachteten Antenne
             in Hauptempfangsrichtung
-
         </div>
 
-
-        <div class="definition-card">
-
-            <strong>
-                U<sub>ref</sub>
-            </strong>
-
-            <br>
-
+        <div class="card">
+            <strong>U<sub>ref</sub></strong><br>
             Empfangsspannung der Referenzantenne
-
         </div>
-
     </div>
-
 
     <p>
         Im Fachbuch wird hierfür ein
-        <strong>λ/2-Dipol als Referenzantenne</strong>
-        verwendet.
+        <strong>λ/2-Dipol als Referenzantenne</strong> verwendet.
     </p>
-
 </section>
 
 
-
-<!-- ======================================================
-     2. NICHT VERWECHSELN
-====================================================== -->
-
 <section class="section warning">
-
     <h2>2. Nicht verwechseln!</h2>
 
+    <div class="grid">
 
-    <div class="compare">
-
-
-        <div class="compare-box">
-
-            <div class="symbol">
-
-                G<sub>U</sub>
-
-            </div>
-
-            <strong>
-                Spannungsverstärkungsmaß
-            </strong>
+        <div class="card">
+            <div class="symbol">G<sub>U</sub></div>
+            <strong>Spannungsverstärkungsmaß</strong>
 
             <p>
-                Beschreibt das Verhältnis von Ausgangs-
-                zu Eingangsspannung eines Verstärkers
-                bzw. Systems.
+                Beschreibt das Verhältnis von Ausgangs- zu Eingangsspannung
+                eines Verstärkers bzw. Systems.
             </p>
 
             <div class="formula">
-
-                G<sub>U</sub>
-                =
-                20 · lg
-                (U<sub>2</sub>/U<sub>1</sub>)
-
+                G<sub>U</sub> = 20 · lg (U<sub>2</sub>/U<sub>1</sub>)
             </div>
-
         </div>
 
-
-
-        <div class="compare-box">
-
-            <div class="symbol">
-
-                G
-
-            </div>
-
-            <strong>
-                Antennengewinnmaß
-            </strong>
+        <div class="card">
+            <div class="symbol">G</div>
+            <strong>Antennengewinnmaß</strong>
 
             <p>
-                Vergleicht die Wirkung einer Antenne
-                in einer bestimmten Richtung mit einer
-                Referenzantenne.
+                Vergleicht die Wirkung einer Antenne in einer bestimmten
+                Richtung mit einer Referenzantenne.
             </p>
 
             <p>
                 <strong>
-                    Eine Antenne erzeugt dabei keine
-                    zusätzliche Sendeleistung.
+                    Eine Antenne erzeugt dabei keine zusätzliche Sendeleistung.
                 </strong>
             </p>
-
         </div>
 
-
     </div>
-
 </section>
 
 
-
-<!-- ======================================================
-     3. dBi / dBd
-====================================================== -->
-
 <section class="section">
-
-    <h2>
-        3. dBi oder dBd – worauf wird verglichen?
-    </h2>
+    <h2>3. dBi oder dBd – worauf wird verglichen?</h2>
 
     <p>
-        Der Zahlenwert eines Antennengewinns ist nur
-        eindeutig, wenn bekannt ist,
-        <strong>welche Referenzantenne</strong>
+        Der Zahlenwert eines Antennengewinns ist nur eindeutig,
+        wenn bekannt ist, <strong>welche Referenzantenne</strong>
         verwendet wurde.
     </p>
 
+    <div class="grid">
 
-    <div class="reference-grid">
+        <div class="card reference-card">
 
+            <svg viewBox="0 0 300 210"
+                 aria-label="Isotroper Strahler">
 
-        <!-- ISOTROPER STRAHLER -->
+                <circle cx="150" cy="105" r="13"
+                        fill="#1264aa"/>
 
-        <div class="reference-card">
+                <circle cx="150" cy="105" r="38"
+                        fill="none"
+                        stroke="#5596c9"
+                        stroke-width="2"/>
 
+                <circle cx="150" cy="105" r="66"
+                        fill="none"
+                        stroke="#5596c9"
+                        stroke-width="2"/>
 
-            <svg
-                viewBox="0 0 300 210"
-                role="img"
-                aria-label="Schematische Darstellung eines isotropen Strahlers">
+                <circle cx="150" cy="105" r="94"
+                        fill="none"
+                        stroke="#5596c9"
+                        stroke-width="2"/>
 
-
-                <circle
-                    cx="150"
-                    cy="105"
-                    r="13"
-                    fill="#1264aa">
-                </circle>
-
-
-                <circle
-                    cx="150"
-                    cy="105"
-                    r="38"
-                    fill="none"
-                    stroke="#5596c9"
-                    stroke-width="2">
-                </circle>
-
-
-                <circle
-                    cx="150"
-                    cy="105"
-                    r="66"
-                    fill="none"
-                    stroke="#5596c9"
-                    stroke-width="2">
-                </circle>
-
-
-                <circle
-                    cx="150"
-                    cy="105"
-                    r="94"
-                    fill="none"
-                    stroke="#5596c9"
-                    stroke-width="2">
-                </circle>
-
-
-                <text
-                    x="150"
-                    y="111"
-                    text-anchor="middle"
-                    font-size="18"
-                    fill="white"
-                    font-weight="bold">
-
+                <text x="150"
+                      y="111"
+                      text-anchor="middle"
+                      font-size="18"
+                      fill="white"
+                      font-weight="bold">
                     i
-
                 </text>
-
-
             </svg>
 
-
-            <h3>
-                Isotroper Strahler
-            </h3>
-
+            <h3>Isotroper Strahler</h3>
 
             <p>
-                Ideale theoretische Bezugsantenne,
-                die gleichmäßig in alle Raumrichtungen
-                abstrahlt.
+                Ideale theoretische Bezugsantenne mit gleichmäßiger
+                Abstrahlung in alle Raumrichtungen.
             </p>
 
-
             <div class="big-value">
-
                 0 dBi
-
             </div>
 
-
             <p>
-                <strong>
-                    i = isotrop
-                </strong>
+                <strong>i = isotrop</strong>
             </p>
-
 
         </div>
 
 
+        <div class="card reference-card">
 
-        <!-- HALBWELLENDIPOL -->
+            <svg viewBox="0 0 300 210"
+                 aria-label="Halbwellendipol">
 
-        <div class="reference-card">
+                <line x1="65"
+                      y1="105"
+                      x2="140"
+                      y2="105"
+                      stroke="#222"
+                      stroke-width="10"
+                      stroke-linecap="round"/>
 
+                <line x1="160"
+                      y1="105"
+                      x2="235"
+                      y2="105"
+                      stroke="#222"
+                      stroke-width="10"
+                      stroke-linecap="round"/>
 
-            <svg
-                viewBox="0 0 300 210"
-                role="img"
-                aria-label="Schematische Darstellung eines Halbwellendipols">
-
-
-                <line
-                    x1="65"
-                    y1="105"
-                    x2="140"
-                    y2="105"
-                    stroke="#222"
-                    stroke-width="10"
-                    stroke-linecap="round">
-                </line>
-
-
-                <line
-                    x1="160"
-                    y1="105"
-                    x2="235"
-                    y2="105"
-                    stroke="#222"
-                    stroke-width="10"
-                    stroke-linecap="round">
-                </line>
-
-
-                <circle
-                    cx="150"
-                    cy="105"
-                    r="7"
-                    fill="#1264aa">
-                </circle>
-
+                <circle cx="150"
+                        cy="105"
+                        r="7"
+                        fill="#1264aa"/>
 
                 <path
-                    d="
-                    M150 105
-                    C105 55, 55 65, 45 105
-                    C55 145, 105 155, 150 105
-                    "
+                    d="M150 105 C105 55,55 65,45 105 C55 145,105 155,150 105"
                     fill="none"
                     stroke="#4f9c5b"
-                    stroke-width="3">
-                </path>
-
+                    stroke-width="3"/>
 
                 <path
-                    d="
-                    M150 105
-                    C195 55, 245 65, 255 105
-                    C245 145, 195 155, 150 105
-                    "
+                    d="M150 105 C195 55,245 65,255 105 C245 145,195 155,150 105"
                     fill="none"
                     stroke="#4f9c5b"
-                    stroke-width="3">
-                </path>
-
-
+                    stroke-width="3"/>
             </svg>
 
-
-            <h3>
-                λ/2-Dipol
-            </h3>
-
+            <h3>λ/2-Dipol</h3>
 
             <p>
-                Wird der Halbwellendipol als
-                Bezugsantenne verwendet, wird der
-                Antennengewinn in <strong>dBd</strong>
-                angegeben.
+                Wird der Halbwellendipol als Bezugsantenne verwendet,
+                wird der Antennengewinn in <strong>dBd</strong> angegeben.
             </p>
-
 
             <div class="big-value">
-
                 0 dBd = 2,15 dBi
-
             </div>
 
-
             <p>
-                <strong>
-                    d = Dipol
-                </strong>
+                <strong>d = Dipol</strong>
             </p>
 
-
         </div>
-
 
     </div>
-
 </section>
 
 
-
-<!-- ======================================================
-     4. UMRECHNUNG
-====================================================== -->
-
 <section class="section conversion">
-
-    <h2>
-        4. Umrechnung dBi ↔ dBd
-    </h2>
-
+    <h2>4. Umrechnung dBi ↔ dBd</h2>
 
     <div class="formula">
-
-        G<sub>dBi</sub>
-        =
-        G<sub>dBd</sub>
-        + 2,15 dB
-
+        G<sub>dBi</sub> =
+        G<sub>dBd</sub> + 2,15 dB
     </div>
-
 
     <div class="formula">
-
-        G<sub>dBd</sub>
-        =
-        G<sub>dBi</sub>
-        − 2,15 dB
-
+        G<sub>dBd</sub> =
+        G<sub>dBi</sub> − 2,15 dB
     </div>
-
 
     <p>
         <strong>Merke:</strong>
-        dBi und dBd geben den Antennengewinn
+        dBi und dBd geben denselben Antennengewinn
         mit unterschiedlichen Bezugsantennen an.
     </p>
-
-
 </section>
 
 
-
-<!-- ======================================================
-     5. DATENBLATTBEISPIEL
-====================================================== -->
-
-<section class="section example">
-
-    <h2>
-        5. Beispiel aus dem Herstellerdatenblatt
-    </h2>
-
+<section class="section">
+    <h2>5. Beispiel aus dem Herstellerdatenblatt</h2>
 
     <p>
-        Die WiMo-Antenne besitzt laut Datenblatt
-        einen Antennengewinn von:
+        Die WiMo-Antenne besitzt laut Datenblatt einen
+        Antennengewinn von:
     </p>
 
-
     <div class="formula">
-
         G = 8,5 dBi
-
     </div>
-
 
     <p>
-        Um den Wert auf einen λ/2-Dipol zu beziehen,
-        wird umgerechnet:
+        Umrechnung auf den λ/2-Dipol:
     </p>
 
-
     <div class="formula">
-
-        G<sub>dBd</sub>
-        =
-        8,5 dBi − 2,15 dB
-
-    </div>
-
-
-    <div class="formula">
-
-        G<sub>dBd</sub>
-        =
+        G<sub>dBd</sub> =
+        8,5 dBi − 2,15 dB =
         6,35 dBd
-
     </div>
-
 
     <div class="key-message">
-
         Die Antenne hat sich nicht verändert.
-        Nur die Bezugsantenne der Gewinnangabe
-        wurde geändert.
-
+        Nur die Bezugsantenne der Gewinnangabe wurde geändert.
     </div>
-
-
 </section>
 
 
-
-<!-- ======================================================
-     BUTTON
-====================================================== -->
-
 <section class="section quiz-start">
-
-    <h2>
-        Wissen überprüfen
-    </h2>
+    <h2>6. Wissen überprüfen</h2>
 
     <p>
-        Sie haben die Erklärung vollständig
-        durchgearbeitet?
-    </p>
-
-    <p>
+        Sie haben die Erklärung vollständig durchgearbeitet?
         Dann überprüfen Sie jetzt Ihr Verständnis.
     </p>
-
 
     <button
         id="startQuizButton"
@@ -915,398 +567,228 @@ footer {
         aria-controls="quizContainer">
 
         Verständnischeck starten
-
     </button>
-
 </section>
 
 
-
-<!-- ======================================================
-     VERSTÄNDNISCHECK
-     IST ZU BEGINN UNSICHTBAR
-====================================================== -->
-
 <section
     id="quizContainer"
-    class="section quiz"
+    class="section"
     hidden>
 
-
-    <h2>
-        Verständnischeck
-    </h2>
-
+    <h2>Verständnischeck</h2>
 
     <p>
         Beantworten Sie alle fünf Fragen.
-        Bei einer richtigen Antwort erscheint
-        ein grüner Haken.
+        Bei einer richtigen Antwort erscheint ein grüner Haken.
     </p>
-
-    <p>
-        Falsche Antworten können Sie erneut bearbeiten.
-    </p>
-
 
     <div
         id="progressText"
         class="progress-text">
-
         0 von 5 Fragen richtig
-
     </div>
-
 
     <div class="progress-box">
-
-        <div
-            id="progress"
-            class="progress">
-        </div>
-
+        <div id="progress" class="progress"></div>
     </div>
 
 
-
-    <!-- FRAGE 1 -->
-
-    <div
-        class="question"
-        data-question="0">
+    <div class="question" data-question="0">
 
         <h3>
-            1. Was beschreibt das Formelzeichen G
-            auf dieser Seite?
+            1. Was beschreibt das Formelzeichen G auf dieser Seite?
         </h3>
 
-
-        <button
-            type="button"
-            class="option"
-            data-correct="false">
-
+        <button class="option"
+                data-correct="false"
+                type="button">
             Das Spannungsverstärkungsmaß
-
         </button>
 
-
-        <button
-            type="button"
-            class="option"
-            data-correct="true">
-
+        <button class="option"
+                data-correct="true"
+                type="button">
             Das Antennengewinnmaß
-
         </button>
 
-
-        <button
-            type="button"
-            class="option"
-            data-correct="false">
-
+        <button class="option"
+                data-correct="false"
+                type="button">
             Die Antennenimpedanz
-
         </button>
 
-
-        <button
-            type="button"
-            class="option"
-            data-correct="false">
-
+        <button class="option"
+                data-correct="false"
+                type="button">
             Die Senderleistung
-
         </button>
-
 
         <div class="feedback"></div>
-
     </div>
 
 
-
-    <!-- FRAGE 2 -->
-
-    <div
-        class="question"
-        data-question="1">
+    <div class="question" data-question="1">
 
         <h3>
             2. Wofür steht das „i“ in dBi?
         </h3>
 
-
-        <button
-            type="button"
-            class="option"
-            data-correct="false">
-
+        <button class="option"
+                data-correct="false"
+                type="button">
             Impedanz
-
         </button>
 
-
-        <button
-            type="button"
-            class="option"
-            data-correct="true">
-
+        <button class="option"
+                data-correct="true"
+                type="button">
             isotrop
-
         </button>
 
-
-        <button
-            type="button"
-            class="option"
-            data-correct="false">
-
+        <button class="option"
+                data-correct="false"
+                type="button">
             induktiv
-
         </button>
 
-
-        <button
-            type="button"
-            class="option"
-            data-correct="false">
-
+        <button class="option"
+                data-correct="false"
+                type="button">
             Innenwiderstand
-
         </button>
 
-
         <div class="feedback"></div>
-
     </div>
 
 
-
-    <!-- FRAGE 3 -->
-
-    <div
-        class="question"
-        data-question="2">
+    <div class="question" data-question="2">
 
         <h3>
-            3. Auf welche Referenzantenne
-            bezieht sich dBd?
+            3. Auf welche Referenzantenne bezieht sich dBd?
         </h3>
 
-
-        <button
-            type="button"
-            class="option"
-            data-correct="false">
-
+        <button class="option"
+                data-correct="false"
+                type="button">
             Auf einen isotropen Strahler
-
         </button>
 
-
-        <button
-            type="button"
-            class="option"
-            data-correct="false">
-
+        <button class="option"
+                data-correct="false"
+                type="button">
             Auf einen Viertelwellenstrahler
-
         </button>
 
-
-        <button
-            type="button"
-            class="option"
-            data-correct="true">
-
+        <button class="option"
+                data-correct="true"
+                type="button">
             Auf einen λ/2-Dipol
-
         </button>
 
-
-        <button
-            type="button"
-            class="option"
-            data-correct="false">
-
+        <button class="option"
+                data-correct="false"
+                type="button">
             Auf eine Yagi-Antenne
-
         </button>
 
-
         <div class="feedback"></div>
-
     </div>
 
 
-
-    <!-- FRAGE 4 -->
-
-    <div
-        class="question"
-        data-question="3">
+    <div class="question" data-question="3">
 
         <h3>
-            4. Eine Antenne besitzt einen
-            Antennengewinn von 8,5 dBi.
-            Welcher Wert entspricht dem Gewinn
-            in dBd?
+            4. Eine Antenne besitzt 8,5 dBi.
+            Welcher Wert entspricht dem Gewinn in dBd?
         </h3>
 
-
-        <button
-            type="button"
-            class="option"
-            data-correct="false">
-
+        <button class="option"
+                data-correct="false"
+                type="button">
             10,65 dBd
-
         </button>
 
-
-        <button
-            type="button"
-            class="option"
-            data-correct="false">
-
+        <button class="option"
+                data-correct="false"
+                type="button">
             8,5 dBd
-
         </button>
 
-
-        <button
-            type="button"
-            class="option"
-            data-correct="true">
-
+        <button class="option"
+                data-correct="true"
+                type="button">
             6,35 dBd
-
         </button>
 
-
-        <button
-            type="button"
-            class="option"
-            data-correct="false">
-
+        <button class="option"
+                data-correct="false"
+                type="button">
             2,15 dBd
-
         </button>
-
 
         <div class="feedback"></div>
-
     </div>
 
 
-
-    <!-- FRAGE 5 -->
-
-    <div
-        class="question"
-        data-question="4">
+    <div class="question" data-question="4">
 
         <h3>
-            5. Was verändert sich bei der
-            Umrechnung von dBi nach dBd?
+            5. Was verändert sich bei der Umrechnung
+            von dBi nach dBd?
         </h3>
 
-
-        <button
-            type="button"
-            class="option"
-            data-correct="false">
-
-            Die physikalischen Eigenschaften
-            der Antenne verändern sich.
-
+        <button class="option"
+                data-correct="false"
+                type="button">
+            Die physikalischen Eigenschaften der Antenne verändern sich.
         </button>
 
-
-        <button
-            type="button"
-            class="option"
-            data-correct="false">
-
+        <button class="option"
+                data-correct="false"
+                type="button">
             Die Senderleistung wird kleiner.
-
         </button>
 
-
-        <button
-            type="button"
-            class="option"
-            data-correct="true">
-
-            Nur die Bezugsantenne der
-            Gewinnangabe ändert sich.
-
+        <button class="option"
+                data-correct="true"
+                type="button">
+            Nur die Bezugsantenne der Gewinnangabe ändert sich.
         </button>
 
-
-        <button
-            type="button"
-            class="option"
-            data-correct="false">
-
-            Die Betriebsfrequenz der
-            Antenne ändert sich.
-
+        <button class="option"
+                data-correct="false"
+                type="button">
+            Die Betriebsfrequenz der Antenne ändert sich.
         </button>
-
 
         <div class="feedback"></div>
-
     </div>
 
 
-
-    <!-- ABSCHLUSS -->
-
-    <div
-        id="result"
-        class="result">
+    <div id="result" class="result">
 
         ✓ Verständnischeck abgeschlossen!
 
-        <span class="small">
-
-            Sie haben alle fünf Fragen richtig
-            beantwortet.<br>
-            Sie können jetzt mit
-            Arbeitsauftrag 2 fortfahren.
-
-        </span>
-
+        <small>
+            Sie haben alle fünf Fragen richtig beantwortet.
+            Sie können jetzt mit Arbeitsauftrag 2 fortfahren.
+        </small>
     </div>
 
-
 </section>
-
 
 </main>
 
 
-
 <footer>
-
-    Antennentechnik –
-    Antennengewinn, dBi und dBd
-
+    Antennentechnik – Antennengewinn, dBi und dBd
 </footer>
-
 
 </div>
 
 
-
 <script>
-
-/* ======================================================
-   VERSTÄNDNISCHECK EINBLENDEN
-====================================================== */
 
 const startQuizButton =
     document.getElementById("startQuizButton");
@@ -1314,201 +796,109 @@ const startQuizButton =
 const quizContainer =
     document.getElementById("quizContainer");
 
+const questions =
+    document.querySelectorAll(".question");
+
+const solved =
+    new Array(questions.length).fill(false);
+
 
 startQuizButton.addEventListener("click", function () {
 
-    /*
-        hidden wird entfernt.
-        Erst jetzt wird der komplette
-        Verständnischeck sichtbar.
-    */
-
     quizContainer.hidden = false;
-
 
     startQuizButton.setAttribute(
         "aria-expanded",
         "true"
     );
 
-
     startQuizButton.textContent =
         "Verständnischeck geöffnet ✓";
 
-
     startQuizButton.disabled = true;
 
-
-    /*
-        Automatisch zum eingeblendeten
-        Verständnischeck scrollen.
-    */
-
     setTimeout(function () {
-
         quizContainer.scrollIntoView({
             behavior: "smooth",
             block: "start"
         });
-
     }, 100);
 
 });
 
 
-
-/* ======================================================
-   FRAGEN AUSWERTEN
-====================================================== */
-
-const questions =
-    document.querySelectorAll(".question");
-
-
-const solved =
-    new Array(questions.length).fill(false);
-
-
-
 questions.forEach(function (question, index) {
-
 
     const buttons =
         question.querySelectorAll(".option");
-
 
     const feedback =
         question.querySelector(".feedback");
 
 
-
     buttons.forEach(function (button) {
 
+        button.addEventListener("click", function () {
 
-        button.addEventListener(
-            "click",
-            function () {
+            if (solved[index]) {
+                return;
+            }
 
+            buttons.forEach(function (btn) {
+                btn.classList.remove("wrong");
+            });
 
-                /*
-                    Bereits richtig gelöste Fragen
-                    können nicht mehr verändert werden.
-                */
-
-                if (solved[index]) {
-                    return;
-                }
+            const isCorrect =
+                button.dataset.correct === "true";
 
 
+            if (isCorrect) {
 
-                /*
-                    Vorherige rote Markierung
-                    innerhalb dieser Frage entfernen.
-                */
+                button.classList.add("correct");
+
+                feedback.textContent =
+                    "✓ Richtig.";
+
+                feedback.className =
+                    "feedback ok";
+
+                solved[index] = true;
 
                 buttons.forEach(function (btn) {
-
-                    btn.classList.remove("wrong");
-
+                    btn.disabled = true;
                 });
 
+                updateProgress();
 
+            } else {
 
-                const isCorrect =
-                    button.dataset.correct === "true";
+                button.classList.add("wrong");
 
+                feedback.textContent =
+                    "Noch nicht richtig. Prüfen Sie die Erklärung oben und versuchen Sie es erneut.";
 
-
-                /* RICHTIGE ANTWORT */
-
-                if (isCorrect) {
-
-
-                    button.classList.add("correct");
-
-
-                    feedback.textContent =
-                        "✓ Richtig.";
-
-
-                    feedback.className =
-                        "feedback ok";
-
-
-                    solved[index] = true;
-
-
-
-                    /*
-                        Nach richtiger Lösung werden
-                        alle Antwortmöglichkeiten
-                        dieser Frage gesperrt.
-                    */
-
-                    buttons.forEach(function (btn) {
-
-                        btn.disabled = true;
-
-                    });
-
-
-
-                    updateProgress();
-
-                }
-
-
-
-                /* FALSCHE ANTWORT */
-
-                else {
-
-
-                    button.classList.add("wrong");
-
-
-                    feedback.textContent =
-                        "Noch nicht richtig. Prüfen Sie die Erklärung oben und versuchen Sie es erneut.";
-
-
-                    feedback.className =
-                        "feedback no";
-
-                }
-
-
+                feedback.className =
+                    "feedback no";
             }
-        );
 
+        });
 
     });
-
 
 });
 
 
-
-/* ======================================================
-   FORTSCHRITT
-====================================================== */
-
 function updateProgress() {
-
 
     const correctCount =
         solved.filter(Boolean).length;
 
-
     const percentage =
         (correctCount / solved.length) * 100;
-
-
 
     document.getElementById("progress")
         .style.width =
         percentage + "%";
-
-
 
     document.getElementById("progressText")
         .textContent =
@@ -1518,39 +908,24 @@ function updateProgress() {
         " Fragen richtig";
 
 
-
-    /*
-        Wenn alle Fragen richtig sind,
-        erscheint der grüne Abschluss.
-    */
-
     if (correctCount === solved.length) {
-
 
         const result =
             document.getElementById("result");
 
-
         result.style.display =
             "block";
 
-
         setTimeout(function () {
-
             result.scrollIntoView({
                 behavior: "smooth",
                 block: "center"
             });
-
         }, 250);
-
-
     }
-
 }
 
 </script>
-
 
 </body>
 </html>
